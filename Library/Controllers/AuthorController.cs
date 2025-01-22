@@ -110,15 +110,16 @@ namespace LibraryManagementAPI.Controllers
         )]
         public async Task<ActionResult> AddAuthor([FromBody] AuthorModel model)
         {
+
             if (!ModelState.IsValid)
             {
-
-                var createdAuthor = await _mediator.Send(new AddAuthorRequest { Model = model });
-                return CreatedAtAction(nameof(AddAuthor), new { id = createdAuthor.AuthorId }, createdAuthor);
+                return BadRequest(ModelState); // Return validation errors
             }
-            return BadRequest(ModelState); // Return validation errors
-        
+
+            var createdAuthor = await _mediator.Send(new AddAuthorRequest { Model = model });
+            return CreatedAtAction(nameof(AddAuthor), new { id = createdAuthor.AuthorId }, createdAuthor);
         }
+
 
         // PUT: api/authors/{id}
         [HttpPut("{id}")]

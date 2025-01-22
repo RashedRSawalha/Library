@@ -11,7 +11,7 @@ namespace LibraryManagementApplication.Validation
             RuleFor(author => author.Name)
                 .NotEmpty().WithMessage("Author name is required.")
                 .MinimumLength(3).WithMessage("Author name must be greater than 2 characters.")
-                .MaximumLength(9).WithMessage("Author name must be less than 10 characters.");
+                .MaximumLength(50).WithMessage("Author name must be less than 50 characters.");
 
             // Rule for AuthorType: Between 1 and 4 inclusive
             RuleFor(author => (int)author.AuthorType) // Cast to int
