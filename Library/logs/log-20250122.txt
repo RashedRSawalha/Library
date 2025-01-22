@@ -1,0 +1,868 @@
+2025-01-22 11:12:32.486 +03:00 [DBG] Initializing Razor view compiler with no compiled views.
+2025-01-22 11:12:32.555 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-01-22 11:12:32.678 +03:00 [DBG] Hosting starting
+2025-01-22 11:12:32.757 +03:00 [INF] User profile is available. Using 'C:\Users\rashe\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-22 11:12:32.771 +03:00 [DBG] Reading data from file 'C:\Users\rashe\AppData\Local\ASP.NET\DataProtection-Keys\key-34f2e68a-4570-439a-8454-209f4db72d73.xml'.
+2025-01-22 11:12:32.887 +03:00 [DBG] Found key {34f2e68a-4570-439a-8454-209f4db72d73}.
+2025-01-22 11:12:32.903 +03:00 [DBG] Considering key {34f2e68a-4570-439a-8454-209f4db72d73} with expiration date 2025-04-13 07:54:25Z as default key.
+2025-01-22 11:12:32.906 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-01-22 11:12:32.906 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2025-01-22 11:12:32.908 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2025-01-22 11:12:32.915 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2025-01-22 11:12:32.918 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2025-01-22 11:12:32.919 +03:00 [DBG] Using key {34f2e68a-4570-439a-8454-209f4db72d73} as the default key.
+2025-01-22 11:12:32.922 +03:00 [DBG] Key ring with default key {34f2e68a-4570-439a-8454-209f4db72d73} was loaded during application startup.
+2025-01-22 11:12:33.280 +03:00 [DBG] Loaded hosting startup assembly LibraryManagementAPI
+2025-01-22 11:12:33.288 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-01-22 11:12:33.288 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-01-22 11:12:33.288 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-01-22 11:12:33.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44328/swagger/index.html - null null
+2025-01-22 11:12:33.488 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-22 11:12:33.488 +03:00 [INF] Hosting environment: Development
+2025-01-22 11:12:33.488 +03:00 [INF] Content root path: C:\Users\rashe\OneDrive\Desktop\Codes\Library\Library
+2025-01-22 11:12:33.488 +03:00 [DBG] Hosting started
+2025-01-22 11:12:35.131 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-01-22 11:12:35.160 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-01-22 11:12:35.162 +03:00 [DBG] Request did not match any endpoints
+2025-01-22 11:12:35.242 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-01-22 11:12:35.244 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-01-22 11:12:35.299 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-01-22 11:12:35.300 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-01-22 11:12:35.313 +03:00 [DBG] Connection ID "18374686523426603009" disconnecting.
+2025-01-22 11:12:35.316 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44328/swagger/index.html - 200 null text/html;charset=utf-8 1937.0557ms
+2025-01-22 11:12:36.463 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44328/_framework/aspnetcore-browser-refresh.js - null null
+2025-01-22 11:12:36.463 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44328/_vs/browserLink - null null
+2025-01-22 11:12:36.477 +03:00 [DBG] Connection ID "18374686514836668417" disconnecting.
+2025-01-22 11:12:36.479 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44328/_framework/aspnetcore-browser-refresh.js - 200 13776 application/javascript; charset=utf-8 8.1005ms
+2025-01-22 11:12:36.616 +03:00 [DBG] Connection ID "18302628899323904001" disconnecting.
+2025-01-22 11:12:36.624 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44328/_vs/browserLink - 200 null text/javascript; charset=UTF-8 161.3975ms
+2025-01-22 11:12:38.694 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44328/swagger/v1/swagger.json - null null
+2025-01-22 11:12:38.695 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-01-22 11:12:38.695 +03:00 [DBG] Request did not match any endpoints
+2025-01-22 11:12:38.753 +03:00 [DBG] Connection ID "18374686523426603011" disconnecting.
+2025-01-22 11:12:38.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44328/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 59.439ms
+2025-01-22 11:12:58.096 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44328/api/RoleManagegement/login - application/json 42
+2025-01-22 11:12:58.106 +03:00 [DBG] 1 candidate(s) found for the request path '/api/RoleManagegement/login'
+2025-01-22 11:12:58.113 +03:00 [DBG] Endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)' with route pattern 'api/RoleManagegement/login' is valid for the request path '/api/RoleManagegement/login'
+2025-01-22 11:12:58.115 +03:00 [DBG] Request matched endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)'
+2025-01-22 11:12:58.118 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-22 11:12:58.241 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2025-01-22 11:12:58.244 +03:00 [DBG] The request has an origin header: 'https://localhost:44328'.
+2025-01-22 11:12:58.245 +03:00 [INF] CORS policy execution successful.
+2025-01-22 11:12:58.248 +03:00 [INF] Executing endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)'
+2025-01-22 11:12:58.289 +03:00 [INF] Route matched with {action = "Login", controller = "RoleManagegement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LibraryManagementDomain.Models.LoginModel) on controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI).
+2025-01-22 11:12:58.290 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-01-22 11:12:58.291 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-01-22 11:12:58.291 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-01-22 11:12:58.291 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-01-22 11:12:58.291 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-01-22 11:12:58.294 +03:00 [DBG] Executing controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:12:59.473 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2025-01-22 11:13:00.405 +03:00 [DBG] The index {'CourseId'} was not created on entity type 'StudentCourse (Dictionary<string, object>)' as the properties are already covered by the index {'CourseId', 'StudentId'}.
+2025-01-22 11:13:00.589 +03:00 [WRN] Sensitive data logging is enabled. Log entries and exception messages may include sensitive application data; this mode should only be enabled during development.
+2025-01-22 11:13:00.767 +03:00 [DBG] Entity Framework Core 9.0.0 initialized 'LibraryDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: SensitiveDataLoggingEnabled 
+2025-01-22 11:13:00.777 +03:00 [DBG] Executed controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:13:00.784 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel' ...
+2025-01-22 11:13:00.786 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel' using the name '' in request data ...
+2025-01-22 11:13:00.787 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-01-22 11:13:00.817 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'LibraryManagementDomain.Models.LoginModel'
+2025-01-22 11:13:00.818 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel'.
+2025-01-22 11:13:00.818 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel'.
+2025-01-22 11:13:00.818 +03:00 [DBG] Attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel' ...
+2025-01-22 11:13:00.855 +03:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel'.
+2025-01-22 11:13:01.153 +03:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Id == __model_Id_0)'
+2025-01-22 11:13:01.591 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<User>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<User>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.PasswordHash (string) Required, 1], [Property: User.RoleId (int) Required, 2] }
+            SELECT TOP(1) u.Id, u.PasswordHash, u.RoleId
+            FROM Users AS u
+            WHERE u.Id == @__model_Id_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: User.PasswordHash (string) Required, 1], [Property: User.RoleId (int) Required, 2] }
+            SELECT TOP(1) u.Id, u.PasswordHash, u.RoleId
+            FROM Users AS u
+            WHERE u.Id == @__model_Id_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            User entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                User instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(User);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: User.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.User").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (User)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.User")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.User")]: 
+                            {
+                                return 
+                                {
+                                    User instance;
+                                    instance = new User();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<PasswordHash>k__BackingField = dataReader.GetString(1);
+                                    instance.<RoleId>k__BackingField = dataReader.GetInt32(2);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: User | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.User")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(User)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: LibraryManagementInfrastructure.LibraryDBContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-01-22 11:13:01.666 +03:00 [DBG] Creating DbConnection.
+2025-01-22 11:13:01.776 +03:00 [DBG] Created DbConnection. (109ms).
+2025-01-22 11:13:01.789 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:02.468 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:02.476 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:13:02.494 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (12ms).
+2025-01-22 11:13:02.506 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (31ms).
+2025-01-22 11:13:02.520 +03:00 [DBG] Executing DbCommand [Parameters=[@__model_Id_0='7'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."PasswordHash", u."RoleId"
+FROM "Users" AS u
+WHERE u."Id" = @__model_Id_0
+LIMIT 1
+2025-01-22 11:13:02.641 +03:00 [INF] Executed DbCommand (122ms) [Parameters=[@__model_Id_0='7'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."PasswordHash", u."RoleId"
+FROM "Users" AS u
+WHERE u."Id" = @__model_Id_0
+LIMIT 1
+2025-01-22 11:13:02.711 +03:00 [DBG] Context 'LibraryDBContext' started tracking 'User' entity with key '{Id: 7}'.
+2025-01-22 11:13:02.752 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:02.769 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 116ms reading results.
+2025-01-22 11:13:02.778 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:02.788 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (9ms).
+2025-01-22 11:13:03.263 +03:00 [DBG] Compiling query expression: 
+'DbSet<Role>()
+    .FirstOrDefault(r => r.Id == __user_RoleId_0)'
+2025-01-22 11:13:03.275 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Role>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Name (string) Required, 1] }
+            SELECT TOP(1) r.Id, r.Name
+            FROM Roles AS r
+            WHERE r.Id == @__user_RoleId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Name (string) Required, 1] }
+            SELECT TOP(1) r.Id, r.Name
+            FROM Roles AS r
+            WHERE r.Id == @__user_RoleId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Role entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Role instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Role);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Role.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Role)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role")]: 
+                            {
+                                return 
+                                {
+                                    Role instance;
+                                    instance = new Role();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Name>k__BackingField = dataReader.GetString(1);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Role)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: LibraryManagementInfrastructure.LibraryDBContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-01-22 11:13:03.285 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.286 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.286 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:13:03.287 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:13:03.287 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:13:03.287 +03:00 [DBG] Executing DbCommand [Parameters=[@__user_RoleId_0='7'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name"
+FROM "Roles" AS r
+WHERE r."Id" = @__user_RoleId_0
+LIMIT 1
+2025-01-22 11:13:03.301 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__user_RoleId_0='7'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name"
+FROM "Roles" AS r
+WHERE r."Id" = @__user_RoleId_0
+LIMIT 1
+2025-01-22 11:13:03.309 +03:00 [DBG] Context 'LibraryDBContext' started tracking 'Role' entity with key '{Id: 7}'.
+2025-01-22 11:13:03.315 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.316 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 13ms reading results.
+2025-01-22 11:13:03.316 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.316 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:13:03.323 +03:00 [DBG] Compiling query expression: 
+'DbSet<RolePermission>()
+    .Where(rp => rp.RoleId == __role_Id_0)
+    .Select(rp => rp.Permission)'
+2025-01-22 11:13:03.334 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<string>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT r.Permission
+        FROM RolePermissions AS r
+        WHERE r.RoleId == @__role_Id_0) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT r.Permission
+        FROM RolePermissions AS r
+        WHERE r.RoleId == @__role_Id_0, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        string value1;
+        value1 = dataReader.GetString(0);
+        return value1;
+    }, 
+    contextType: LibraryManagementInfrastructure.LibraryDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-01-22 11:13:03.336 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.337 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.337 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:13:03.337 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:13:03.337 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:13:03.338 +03:00 [DBG] Executing DbCommand [Parameters=[@__role_Id_0='7'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Permission"
+FROM "RolePermissions" AS r
+WHERE r."RoleId" = @__role_Id_0
+2025-01-22 11:13:03.343 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='7'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Permission"
+FROM "RolePermissions" AS r
+WHERE r."RoleId" = @__role_Id_0
+2025-01-22 11:13:03.345 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.345 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 1ms reading results.
+2025-01-22 11:13:03.345 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.345 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:13:03.432 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-01-22 11:13:03.434 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-01-22 11:13:03.434 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-22 11:13:03.434 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-22 11:13:03.435 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-01-22 11:13:03.435 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-22 11:13:03.450 +03:00 [INF] Executed action LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI) in 5154.7087ms
+2025-01-22 11:13:03.451 +03:00 [INF] Executed endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)'
+2025-01-22 11:13:03.454 +03:00 [INF] HTTP POST /api/RoleManagegement/login responded 200 in 5332.5542 ms
+2025-01-22 11:13:03.456 +03:00 [DBG] Connection ID "18374686501951766529" disconnecting.
+2025-01-22 11:13:03.458 +03:00 [DBG] 'LibraryDBContext' disposed.
+2025-01-22 11:13:03.462 +03:00 [DBG] Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:13:03.464 +03:00 [DBG] Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (2ms).
+2025-01-22 11:13:03.467 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44328/api/RoleManagegement/login - 200 null application/json; charset=utf-8 5370.2487ms
+2025-01-22 11:13:33.617 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44328/api/Authors - application/json 55
+2025-01-22 11:13:33.619 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Authors'
+2025-01-22 11:13:33.619 +03:00 [DBG] Endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)' with route pattern 'api/Authors' is valid for the request path '/api/Authors'
+2025-01-22 11:13:33.619 +03:00 [DBG] Request matched endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)'
+2025-01-22 11:13:33.620 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-22 11:13:33.689 +03:00 [DBG] Successfully validated the token.
+2025-01-22 11:13:33.691 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-01-22 11:13:33.709 +03:00 [DBG] The request has an origin header: 'https://localhost:44328'.
+2025-01-22 11:13:33.709 +03:00 [INF] CORS policy execution successful.
+2025-01-22 11:13:33.709 +03:00 [INF] Executing endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)'
+2025-01-22 11:13:33.717 +03:00 [INF] Route matched with {action = "AddAuthor", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddAuthor(LibraryManagementDomain.Models.AuthorModel) on controller LibraryManagementAPI.Controllers.AuthorsController (LibraryManagementAPI).
+2025-01-22 11:13:33.717 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["LibraryManagementApplication.Authorization.AuthorizeRoleOrPermissionAttribute"]
+2025-01-22 11:13:33.717 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-01-22 11:13:33.717 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-01-22 11:13:33.717 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-01-22 11:13:33.717 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-01-22 11:13:33.719 +03:00 [INF] Authorization failed for the request at filter 'LibraryManagementApplication.Authorization.AuthorizeRoleOrPermissionAttribute'.
+2025-01-22 11:13:33.721 +03:00 [INF] Executing ForbidResult with authentication schemes ([]).
+2025-01-22 11:13:33.724 +03:00 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-01-22 11:13:33.724 +03:00 [INF] Executed action LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI) in 6.6285ms
+2025-01-22 11:13:33.724 +03:00 [INF] Executed endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)'
+2025-01-22 11:13:33.724 +03:00 [INF] HTTP POST /api/Authors responded 403 in 104.4569 ms
+2025-01-22 11:13:33.732 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44328/api/Authors - 403 null null 116.1179ms
+2025-01-22 11:13:33.733 +03:00 [DBG] Connection ID "18374686523426603013" disconnecting.
+2025-01-22 11:14:18.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44328/api/RoleManagegement/get-roles - null null
+2025-01-22 11:14:18.416 +03:00 [DBG] 1 candidate(s) found for the request path '/api/RoleManagegement/get-roles'
+2025-01-22 11:14:18.419 +03:00 [DBG] Endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.GetRoles (LibraryManagementAPI)' with route pattern 'api/RoleManagegement/get-roles' is valid for the request path '/api/RoleManagegement/get-roles'
+2025-01-22 11:14:18.422 +03:00 [DBG] Request matched endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.GetRoles (LibraryManagementAPI)'
+2025-01-22 11:14:18.444 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-22 11:14:18.486 +03:00 [DBG] Successfully validated the token.
+2025-01-22 11:14:18.489 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-01-22 11:14:18.502 +03:00 [INF] Executing endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.GetRoles (LibraryManagementAPI)'
+2025-01-22 11:14:18.577 +03:00 [INF] Route matched with {action = "GetRoles", controller = "RoleManagegement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRoles() on controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI).
+2025-01-22 11:14:18.578 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-01-22 11:14:18.578 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-01-22 11:14:18.579 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-01-22 11:14:18.579 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-01-22 11:14:18.579 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-01-22 11:14:18.584 +03:00 [DBG] Executing controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:14:19.048 +03:00 [DBG] Entity Framework Core 9.0.0 initialized 'LibraryDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: SensitiveDataLoggingEnabled 
+2025-01-22 11:14:19.061 +03:00 [DBG] Executed controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:14:19.145 +03:00 [DBG] Compiling query expression: 
+'DbSet<Role>()
+    .Select(r => new { 
+        Id = r.Id, 
+        Name = r.Name, 
+        Permissions = DbSet<RolePermission>()
+            .Where(rp => rp.RoleId == r.Id)
+            .Select(rp => rp.Permission)
+            .ToList()
+     })'
+2025-01-22 11:14:19.470 +03:00 [DBG] Generated query execution expression: 
+'queryContext => SingleQueryingEnumerable.Create<<>f__AnonymousType6<int, string, List<string>>>(
+    relationalQueryContext: (RelationalQueryContext)queryContext, 
+    relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> 0
+            1 -> 1
+            2 -> 2
+            3 -> 3
+        SELECT r.Id, r.Name, r0.Permission, r0.Id
+        FROM Roles AS r
+        LEFT JOIN RolePermissions AS r0 ON r.Id == r0.RoleId
+        ORDER BY r.Id ASC) | Resolver: c => new RelationalCommandCache(
+        c.Dependencies.MemoryCache, 
+        c.RelationalDependencies.QuerySqlGeneratorFactory, 
+        c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+        Client Projections:
+            0 -> 0
+            1 -> 1
+            2 -> 2
+            3 -> 3
+        SELECT r.Id, r.Name, r0.Permission, r0.Id
+        FROM Roles AS r
+        LEFT JOIN RolePermissions AS r0 ON r.Id == r0.RoleId
+        ORDER BY r.Id ASC, 
+        False, 
+        new HashSet<string>(
+            new string[]{ }, 
+            StringComparer.Ordinal
+        )
+    )].GetRelationalCommandTemplate(parameters), 
+    readerColumns: null, 
+    shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+    {
+        resultContext.Values == null ? 
+        {
+            int? value1;
+            string value2;
+            List<string> namelessParameter{0};
+            value1 = (int?)dataReader.GetInt32(0);
+            value2 = dataReader.GetString(1);
+            namelessParameter{0} = ShaperProcessingExpressionVisitor.InitializeCollection<string, List<string>>(
+                collectionId: 0, 
+                queryContext: queryContext, 
+                dbDataReader: dataReader, 
+                resultCoordinator: resultCoordinator, 
+                parentIdentifier: (queryContext, dataReader) => new object[]{ (object)(int?)dataReader.GetInt32(0) }, 
+                outerIdentifier: (queryContext, dataReader) => new object[]{ (object)(int?)dataReader.GetInt32(0) }, 
+                clrCollectionAccessor: default(IClrCollectionAccessor));
+            return resultContext.Values = new object[]
+            { 
+                (object)value1, 
+                value2, 
+                namelessParameter{0} 
+            };
+        } : default(void);
+        ShaperProcessingExpressionVisitor.PopulateCollection<List<string>, string, string>(
+            collectionId: 0, 
+            queryContext: queryContext, 
+            dbDataReader: dataReader, 
+            resultCoordinator: resultCoordinator, 
+            parentIdentifier: (queryContext, dataReader) => new object[]{ (object)(int?)dataReader.GetInt32(0) }, 
+            outerIdentifier: (queryContext, dataReader) => new object[]{ (object)(int?)dataReader.GetInt32(0) }, 
+            selfIdentifier: (queryContext, dataReader) => new object[]{ (object)dataReader.IsDBNull(3) ? default(int?) : (int?)dataReader.GetInt32(3) }, 
+            parentIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && Invoke((v1, v2) => v1 == v2, (int)left, (int)right) }], 
+            outerIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && Invoke((v1, v2) => v1 == v2, (int)left, (int)right) }], 
+            selfIdentifierValueComparers: [LIFTABLE Constant: Func<object, object, bool>[] { Func<object, object, bool> } | Resolver: _ => new Func<object, object, bool>[]{ (left, right) => left == null ? right == null : right != null && Invoke((v1, v2) => v1 == v2, (int)left, (int)right) }], 
+            innerShaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+            {
+                string value1;
+                value1 = dataReader.IsDBNull(2) ? default(string) : dataReader.GetString(2);
+                return value1;
+            });
+        return IsTrue(resultCoordinator.ResultReady)
+         ? new { 
+            Id = (int)(int?)(resultContext.Values[0]), 
+            Name = (string)(resultContext.Values[1]), 
+            Permissions = (List<string>)(resultContext.Values[2])
+         } : default(<>f__AnonymousType6<int, string, List<string>>);
+    }, 
+    contextType: LibraryManagementInfrastructure.LibraryDBContext, 
+    standAloneStateManager: False, 
+    detailedErrorsEnabled: False, 
+    threadSafetyChecksEnabled: True)'
+2025-01-22 11:14:19.484 +03:00 [DBG] Creating DbConnection.
+2025-01-22 11:14:19.487 +03:00 [DBG] Created DbConnection. (2ms).
+2025-01-22 11:14:19.488 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:19.493 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:19.494 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:14:19.496 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2025-01-22 11:14:19.496 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2025-01-22 11:14:19.497 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r0."Permission", r0."Id"
+FROM "Roles" AS r
+LEFT JOIN "RolePermissions" AS r0 ON r."Id" = r0."RoleId"
+ORDER BY r."Id"
+2025-01-22 11:14:19.641 +03:00 [INF] Executed DbCommand (143ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name", r0."Permission", r0."Id"
+FROM "Roles" AS r
+LEFT JOIN "RolePermissions" AS r0 ON r."Id" = r0."RoleId"
+ORDER BY r."Id"
+2025-01-22 11:14:19.672 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:19.672 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 30ms reading results.
+2025-01-22 11:14:19.673 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:19.673 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:14:19.677 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-01-22 11:14:19.680 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-01-22 11:14:19.680 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-22 11:14:19.680 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-22 11:14:19.680 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-01-22 11:14:19.681 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType6`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], LibraryManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-22 11:14:19.724 +03:00 [INF] Executed action LibraryManagementAPI.Controllers.RoleManagegementController.GetRoles (LibraryManagementAPI) in 1144.4581ms
+2025-01-22 11:14:19.724 +03:00 [INF] Executed endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.GetRoles (LibraryManagementAPI)'
+2025-01-22 11:14:19.725 +03:00 [INF] HTTP GET /api/RoleManagegement/get-roles responded 200 in 1280.9271 ms
+2025-01-22 11:14:19.727 +03:00 [DBG] 'LibraryDBContext' disposed.
+2025-01-22 11:14:19.727 +03:00 [DBG] Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:19.728 +03:00 [DBG] Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (1ms).
+2025-01-22 11:14:19.735 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44328/api/RoleManagegement/get-roles - 200 null application/json; charset=utf-8 1352.125ms
+2025-01-22 11:14:19.743 +03:00 [DBG] Connection ID "18374686510541701121" disconnecting.
+2025-01-22 11:14:36.818 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44328/api/RoleManagegement/register - application/json 43
+2025-01-22 11:14:36.820 +03:00 [DBG] 1 candidate(s) found for the request path '/api/RoleManagegement/register'
+2025-01-22 11:14:36.821 +03:00 [DBG] Endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Register (LibraryManagementAPI)' with route pattern 'api/RoleManagegement/register' is valid for the request path '/api/RoleManagegement/register'
+2025-01-22 11:14:36.822 +03:00 [DBG] Request matched endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Register (LibraryManagementAPI)'
+2025-01-22 11:14:36.822 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-22 11:14:36.823 +03:00 [DBG] Successfully validated the token.
+2025-01-22 11:14:36.823 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-01-22 11:14:36.825 +03:00 [DBG] The request has an origin header: 'https://localhost:44328'.
+2025-01-22 11:14:36.825 +03:00 [INF] CORS policy execution successful.
+2025-01-22 11:14:36.826 +03:00 [INF] Executing endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Register (LibraryManagementAPI)'
+2025-01-22 11:14:36.835 +03:00 [INF] Route matched with {action = "Register", controller = "RoleManagegement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(LibraryManagementDomain.Models.RegisterModel) on controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI).
+2025-01-22 11:14:36.836 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-01-22 11:14:36.836 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-01-22 11:14:36.836 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-01-22 11:14:36.836 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-01-22 11:14:36.836 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-01-22 11:14:36.836 +03:00 [DBG] Executing controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:14:36.858 +03:00 [DBG] Entity Framework Core 9.0.0 initialized 'LibraryDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: SensitiveDataLoggingEnabled 
+2025-01-22 11:14:36.860 +03:00 [DBG] Executed controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:14:36.865 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.RegisterModel' ...
+2025-01-22 11:14:36.866 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.RegisterModel' using the name '' in request data ...
+2025-01-22 11:14:36.867 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-01-22 11:14:36.879 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'LibraryManagementDomain.Models.RegisterModel'
+2025-01-22 11:14:36.879 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.RegisterModel'.
+2025-01-22 11:14:36.879 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.RegisterModel'.
+2025-01-22 11:14:36.879 +03:00 [DBG] Attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.RegisterModel' ...
+2025-01-22 11:14:36.889 +03:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.RegisterModel'.
+2025-01-22 11:14:36.898 +03:00 [DBG] Compiling query expression: 
+'DbSet<Role>()
+    .FirstOrDefault(r => r.Id == __model_RoleId_0)'
+2025-01-22 11:14:36.915 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Role>(
+    asyncEnumerable: SingleQueryingEnumerable.Create<Role>(
+        relationalQueryContext: (RelationalQueryContext)queryContext, 
+        relationalCommandResolver: parameters => [LIFTABLE Constant: RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Name (string) Required, 1] }
+            SELECT TOP(1) r.Id, r.Name
+            FROM Roles AS r
+            WHERE r.Id == @__model_RoleId_0) | Resolver: c => new RelationalCommandCache(
+            c.Dependencies.MemoryCache, 
+            c.RelationalDependencies.QuerySqlGeneratorFactory, 
+            c.RelationalDependencies.RelationalParameterBasedSqlProcessorFactory, 
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Role.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Role.Name (string) Required, 1] }
+            SELECT TOP(1) r.Id, r.Name
+            FROM Roles AS r
+            WHERE r.Id == @__model_RoleId_0, 
+            False, 
+            new HashSet<string>(
+                new string[]{ }, 
+                StringComparer.Ordinal
+            )
+        )].GetRelationalCommandTemplate(parameters), 
+        readerColumns: null, 
+        shaper: (queryContext, dataReader, resultContext, resultCoordinator) => 
+        {
+            Role entity;
+            entity = 
+            {
+                MaterializationContext materializationContext1;
+                IEntityType entityType1;
+                Role instance1;
+                InternalEntityEntry entry1;
+                bool hasNullKey1;
+                materializationContext1 = new MaterializationContext(
+                    [LIFTABLE Constant: ValueBuffer | Resolver: _ => (object)ValueBuffer.Empty], 
+                    queryContext.Context
+                );
+                instance1 = default(Role);
+                entry1 = queryContext.TryGetEntry(
+                    key: [LIFTABLE Constant: Key: Role.Id PK | Resolver: c => c.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role").FindPrimaryKey()], 
+                    keyValues: new object[]{ (object)dataReader.GetInt32(0) }, 
+                    throwOnNullKey: True, 
+                    hasNullKey: hasNullKey1);
+                !(hasNullKey1) ? entry1 != default(InternalEntityEntry) ? 
+                {
+                    entityType1 = entry1.EntityType;
+                    return instance1 = (Role)entry1.Entity;
+                } : 
+                {
+                    ISnapshot shadowSnapshot1;
+                    shadowSnapshot1 = [LIFTABLE Constant: Snapshot | Resolver: _ => Snapshot.Empty];
+                    entityType1 = [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{0} => namelessParameter{0}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role")];
+                    instance1 = switch (entityType1)
+                    {
+                        case [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{1} => namelessParameter{1}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role")]: 
+                            {
+                                return 
+                                {
+                                    Role instance;
+                                    instance = new Role();
+                                    instance.<Id>k__BackingField = dataReader.GetInt32(0);
+                                    instance.<Name>k__BackingField = dataReader.GetString(1);
+                                    (instance is IInjectableService) ? ((IInjectableService)instance).Injected(
+                                        context: materializationContext1.Context, 
+                                        entity: instance, 
+                                        queryTrackingBehavior: TrackAll, 
+                                        structuralType: [LIFTABLE Constant: EntityType: Role | Resolver: namelessParameter{2} => namelessParameter{2}.Dependencies.Model.FindEntityType("LibraryManagementDomain.Entities.Role")]) : default(void);
+                                    return instance;
+                                }}
+                        default: 
+                            default(Role)
+                    }
+                    ;
+                    entry1 = entityType1 == default(IEntityType) ? default(InternalEntityEntry) : queryContext.StartTracking(
+                        entityType: entityType1, 
+                        entity: instance1, 
+                        snapshot: shadowSnapshot1);
+                    return instance1;
+                } : default(void);
+                return instance1;
+            };
+            return entity;
+        }, 
+        contextType: LibraryManagementInfrastructure.LibraryDBContext, 
+        standAloneStateManager: False, 
+        detailedErrorsEnabled: False, 
+        threadSafetyChecksEnabled: True), 
+    cancellationToken: queryContext.CancellationToken)'
+2025-01-22 11:14:36.922 +03:00 [DBG] Creating DbConnection.
+2025-01-22 11:14:36.922 +03:00 [DBG] Created DbConnection. (0ms).
+2025-01-22 11:14:36.922 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:36.922 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:36.922 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:14:36.922 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:14:36.923 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:14:36.923 +03:00 [DBG] Executing DbCommand [Parameters=[@__model_RoleId_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name"
+FROM "Roles" AS r
+WHERE r."Id" = @__model_RoleId_0
+LIMIT 1
+2025-01-22 11:14:36.933 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__model_RoleId_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name"
+FROM "Roles" AS r
+WHERE r."Id" = @__model_RoleId_0
+LIMIT 1
+2025-01-22 11:14:36.936 +03:00 [DBG] Context 'LibraryDBContext' started tracking 'Role' entity with key '{Id: 3}'.
+2025-01-22 11:14:36.937 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:36.937 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 3ms reading results.
+2025-01-22 11:14:36.937 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:36.937 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:14:37.323 +03:00 [DBG] 'LibraryDBContext' generated temporary value '-2147482647' for the property 'User.Id'.
+2025-01-22 11:14:37.345 +03:00 [DBG] Context 'LibraryDBContext' started tracking 'User' entity with key '{Id: -2147482647}'.
+2025-01-22 11:14:37.355 +03:00 [DBG] SaveChanges starting for 'LibraryDBContext'.
+2025-01-22 11:14:37.363 +03:00 [DBG] DetectChanges starting for 'LibraryDBContext'.
+2025-01-22 11:14:37.385 +03:00 [DBG] DetectChanges completed for 'LibraryDBContext'.
+2025-01-22 11:14:37.513 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:37.514 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:37.517 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:14:37.517 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:14:37.517 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:14:37.518 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='$2a$11$IqVD4o7qKwvippjgpPUpOO46lS3OnJn2XVw8chx.C9vv6.9C3KsJG' (Nullable = false), @p1='3'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("PasswordHash", "RoleId")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-01-22 11:14:37.618 +03:00 [INF] Executed DbCommand (100ms) [Parameters=[@p0='$2a$11$IqVD4o7qKwvippjgpPUpOO46lS3OnJn2XVw8chx.C9vv6.9C3KsJG' (Nullable = false), @p1='3'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("PasswordHash", "RoleId")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-01-22 11:14:37.645 +03:00 [DBG] The foreign key property 'User.Id' was detected as changed from '-2147482647' to '9' for entity with key '{Id: 9}'.
+2025-01-22 11:14:37.655 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:37.656 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 37ms reading results.
+2025-01-22 11:14:37.657 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:37.657 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:14:37.678 +03:00 [DBG] The 'User' entity with key '{Id: 9}' tracked by 'LibraryDBContext' changed state from '"Added"' to '"Unchanged"'.
+2025-01-22 11:14:37.686 +03:00 [DBG] SaveChanges completed for 'LibraryDBContext' with 1 entities written to the database.
+2025-01-22 11:14:37.690 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-01-22 11:14:37.690 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-01-22 11:14:37.690 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-22 11:14:37.690 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-22 11:14:37.691 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-01-22 11:14:37.691 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-22 11:14:37.696 +03:00 [INF] Executed action LibraryManagementAPI.Controllers.RoleManagegementController.Register (LibraryManagementAPI) in 859.536ms
+2025-01-22 11:14:37.696 +03:00 [INF] Executed endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Register (LibraryManagementAPI)'
+2025-01-22 11:14:37.696 +03:00 [INF] HTTP POST /api/RoleManagegement/register responded 200 in 873.7909 ms
+2025-01-22 11:14:37.697 +03:00 [DBG] 'LibraryDBContext' disposed.
+2025-01-22 11:14:37.697 +03:00 [DBG] Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:14:37.698 +03:00 [DBG] Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:14:37.707 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44328/api/RoleManagegement/register - 200 null application/json; charset=utf-8 888.3724ms
+2025-01-22 11:14:37.718 +03:00 [DBG] Connection ID "18158513715543015426" disconnecting.
+2025-01-22 11:15:00.790 +03:00 [DBG] HttpMessageHandler expired after 120000ms for client ''
+2025-01-22 11:15:02.514 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44328/api/RoleManagegement/login - application/json 39
+2025-01-22 11:15:02.514 +03:00 [DBG] 1 candidate(s) found for the request path '/api/RoleManagegement/login'
+2025-01-22 11:15:02.514 +03:00 [DBG] Endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)' with route pattern 'api/RoleManagegement/login' is valid for the request path '/api/RoleManagegement/login'
+2025-01-22 11:15:02.515 +03:00 [DBG] Request matched endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)'
+2025-01-22 11:15:02.515 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-22 11:15:02.515 +03:00 [DBG] Successfully validated the token.
+2025-01-22 11:15:02.516 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-01-22 11:15:02.517 +03:00 [DBG] The request has an origin header: 'https://localhost:44328'.
+2025-01-22 11:15:02.517 +03:00 [INF] CORS policy execution successful.
+2025-01-22 11:15:02.517 +03:00 [INF] Executing endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)'
+2025-01-22 11:15:02.520 +03:00 [INF] Route matched with {action = "Login", controller = "RoleManagegement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LibraryManagementDomain.Models.LoginModel) on controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI).
+2025-01-22 11:15:02.520 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-01-22 11:15:02.520 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-01-22 11:15:02.520 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-01-22 11:15:02.520 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-01-22 11:15:02.521 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-01-22 11:15:02.521 +03:00 [DBG] Executing controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:15:02.522 +03:00 [DBG] Entity Framework Core 9.0.0 initialized 'LibraryDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: SensitiveDataLoggingEnabled 
+2025-01-22 11:15:02.526 +03:00 [DBG] Executed controller factory for controller LibraryManagementAPI.Controllers.RoleManagegementController (LibraryManagementAPI)
+2025-01-22 11:15:02.526 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel' ...
+2025-01-22 11:15:02.526 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel' using the name '' in request data ...
+2025-01-22 11:15:02.526 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-01-22 11:15:02.527 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'LibraryManagementDomain.Models.LoginModel'
+2025-01-22 11:15:02.528 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel'.
+2025-01-22 11:15:02.528 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel'.
+2025-01-22 11:15:02.528 +03:00 [DBG] Attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel' ...
+2025-01-22 11:15:02.531 +03:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.LoginModel'.
+2025-01-22 11:15:02.535 +03:00 [DBG] Creating DbConnection.
+2025-01-22 11:15:02.536 +03:00 [DBG] Created DbConnection. (0ms).
+2025-01-22 11:15:02.536 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.536 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.536 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:15:02.536 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:15:02.536 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:15:02.536 +03:00 [DBG] Executing DbCommand [Parameters=[@__model_Id_0='9'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."PasswordHash", u."RoleId"
+FROM "Users" AS u
+WHERE u."Id" = @__model_Id_0
+LIMIT 1
+2025-01-22 11:15:02.540 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__model_Id_0='9'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."PasswordHash", u."RoleId"
+FROM "Users" AS u
+WHERE u."Id" = @__model_Id_0
+LIMIT 1
+2025-01-22 11:15:02.544 +03:00 [DBG] Context 'LibraryDBContext' started tracking 'User' entity with key '{Id: 9}'.
+2025-01-22 11:15:02.549 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.549 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 8ms reading results.
+2025-01-22 11:15:02.549 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.553 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (3ms).
+2025-01-22 11:15:02.714 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.714 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.714 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:15:02.714 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:15:02.714 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:15:02.714 +03:00 [DBG] Executing DbCommand [Parameters=[@__user_RoleId_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name"
+FROM "Roles" AS r
+WHERE r."Id" = @__user_RoleId_0
+LIMIT 1
+2025-01-22 11:15:02.718 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__user_RoleId_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."Name"
+FROM "Roles" AS r
+WHERE r."Id" = @__user_RoleId_0
+LIMIT 1
+2025-01-22 11:15:02.719 +03:00 [DBG] Context 'LibraryDBContext' started tracking 'Role' entity with key '{Id: 3}'.
+2025-01-22 11:15:02.719 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.719 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-01-22 11:15:02.719 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.719 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:15:02.720 +03:00 [DBG] Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.721 +03:00 [DBG] Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.721 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2025-01-22 11:15:02.721 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:15:02.721 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2025-01-22 11:15:02.721 +03:00 [DBG] Executing DbCommand [Parameters=[@__role_Id_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Permission"
+FROM "RolePermissions" AS r
+WHERE r."RoleId" = @__role_Id_0
+2025-01-22 11:15:02.726 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Permission"
+FROM "RolePermissions" AS r
+WHERE r."RoleId" = @__role_Id_0
+2025-01-22 11:15:02.727 +03:00 [DBG] Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.727 +03:00 [DBG] A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+2025-01-22 11:15:02.727 +03:00 [DBG] Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.728 +03:00 [DBG] Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:15:02.729 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-01-22 11:15:02.729 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-01-22 11:15:02.729 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-01-22 11:15:02.729 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-01-22 11:15:02.729 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-01-22 11:15:02.729 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-22 11:15:02.730 +03:00 [INF] Executed action LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI) in 209.3223ms
+2025-01-22 11:15:02.730 +03:00 [INF] Executed endpoint 'LibraryManagementAPI.Controllers.RoleManagegementController.Login (LibraryManagementAPI)'
+2025-01-22 11:15:02.730 +03:00 [INF] HTTP POST /api/RoleManagegement/login responded 200 in 215.3523 ms
+2025-01-22 11:15:02.730 +03:00 [DBG] 'LibraryDBContext' disposed.
+2025-01-22 11:15:02.731 +03:00 [DBG] Disposing connection to database 'postgres' on server 'tcp://localhost:5432'.
+2025-01-22 11:15:02.731 +03:00 [DBG] Disposed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+2025-01-22 11:15:02.731 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44328/api/RoleManagegement/login - 200 null application/json; charset=utf-8 217.5407ms
+2025-01-22 11:15:02.731 +03:00 [DBG] Connection ID "18374686527721570305" disconnecting.
+2025-01-22 11:15:10.809 +03:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-01-22 11:15:10.812 +03:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.7955ms - processed: 0 items - remaining: 1 items
+2025-01-22 11:15:19.368 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44328/api/Authors - application/json 55
+2025-01-22 11:15:19.369 +03:00 [DBG] 1 candidate(s) found for the request path '/api/Authors'
+2025-01-22 11:15:19.371 +03:00 [DBG] Endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)' with route pattern 'api/Authors' is valid for the request path '/api/Authors'
+2025-01-22 11:15:19.372 +03:00 [DBG] Request matched endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)'
+2025-01-22 11:15:19.372 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-01-22 11:15:19.373 +03:00 [DBG] Successfully validated the token.
+2025-01-22 11:15:19.373 +03:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2025-01-22 11:15:19.374 +03:00 [DBG] The request has an origin header: 'https://localhost:44328'.
+2025-01-22 11:15:19.374 +03:00 [INF] CORS policy execution successful.
+2025-01-22 11:15:19.374 +03:00 [INF] Executing endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)'
+2025-01-22 11:15:19.376 +03:00 [INF] Route matched with {action = "AddAuthor", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] AddAuthor(LibraryManagementDomain.Models.AuthorModel) on controller LibraryManagementAPI.Controllers.AuthorsController (LibraryManagementAPI).
+2025-01-22 11:15:19.377 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["LibraryManagementApplication.Authorization.AuthorizeRoleOrPermissionAttribute"]
+2025-01-22 11:15:19.377 +03:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2025-01-22 11:15:19.378 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-01-22 11:15:19.378 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-01-22 11:15:19.378 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-01-22 11:15:19.378 +03:00 [DBG] Executing controller factory for controller LibraryManagementAPI.Controllers.AuthorsController (LibraryManagementAPI)
+2025-01-22 11:15:19.381 +03:00 [DBG] Entity Framework Core 9.0.0 initialized 'LibraryDBContext' using provider 'Npgsql.EntityFrameworkCore.PostgreSQL:9.0.2+697dd7182173ff3450eddc63b44837fba76331df' with options: SensitiveDataLoggingEnabled 
+2025-01-22 11:15:19.384 +03:00 [DBG] Executed controller factory for controller LibraryManagementAPI.Controllers.AuthorsController (LibraryManagementAPI)
+2025-01-22 11:15:19.385 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.AuthorModel' ...
+2025-01-22 11:15:19.385 +03:00 [DBG] Attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.AuthorModel' using the name '' in request data ...
+2025-01-22 11:15:19.385 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-01-22 11:15:19.399 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'LibraryManagementDomain.Models.AuthorModel'
+2025-01-22 11:15:19.400 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.AuthorModel'.
+2025-01-22 11:15:19.400 +03:00 [DBG] Done attempting to bind parameter 'model' of type 'LibraryManagementDomain.Models.AuthorModel'.
+2025-01-22 11:15:19.400 +03:00 [DBG] Attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.AuthorModel' ...
+2025-01-22 11:15:19.513 +03:00 [DBG] Done attempting to validate the bound parameter 'model' of type 'LibraryManagementDomain.Models.AuthorModel'.
+2025-01-22 11:15:19.516 +03:00 [DBG] The request has model state errors, returning an error response.
+2025-01-22 11:15:19.526 +03:00 [DBG] Request was short circuited at action filter 'Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter'.
+2025-01-22 11:15:19.526 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-01-22 11:15:19.527 +03:00 [DBG] No information found on request to perform content negotiation.
+2025-01-22 11:15:19.528 +03:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2025-01-22 11:15:19.529 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2025-01-22 11:15:19.529 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-01-22 11:15:19.582 +03:00 [INF] Executed action LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI) in 203.5069ms
+2025-01-22 11:15:19.582 +03:00 [INF] Executed endpoint 'LibraryManagementAPI.Controllers.AuthorsController.AddAuthor (LibraryManagementAPI)'
+2025-01-22 11:15:19.582 +03:00 [INF] HTTP POST /api/Authors responded 400 in 209.5615 ms
+2025-01-22 11:15:19.582 +03:00 [DBG] 'LibraryDBContext' disposed.
+2025-01-22 11:15:19.582 +03:00 [DBG] Connection ID "18374686527721570307" disconnecting.
+2025-01-22 11:15:19.582 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44328/api/Authors - 400 null application/problem+json; charset=utf-8 213.8969ms
+2025-01-22 11:15:20.823 +03:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-01-22 11:15:20.824 +03:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0064ms - processed: 0 items - remaining: 1 items
+2025-01-22 11:15:30.839 +03:00 [DBG] Starting HttpMessageHandler cleanup cycle with 1 items
+2025-01-22 11:15:30.839 +03:00 [DBG] Ending HttpMessageHandler cleanup cycle after 0.0058ms - processed: 0 items - remaining: 1 items

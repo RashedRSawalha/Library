@@ -1,0 +1,16 @@
+# Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Build files
+bin/
+obj/
+
+# Temporary files
+*.log
+*.tmp
+
+# OS files
+Thumbs.db
+.DS_Store
