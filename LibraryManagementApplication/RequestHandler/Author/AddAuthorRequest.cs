@@ -1,59 +1,67 @@
 ﻿using Kernal;
-using LibraryManagementApplication.Commands;
-using LibraryManagementDomain.Models;
+using LibraryManagementDomain.Mapping;
+using Shared.Helpers;
 using LibraryManagementDomain.DTO;
-using Persistence.Interface;
+using LibraryManagementDomain.Models;
+using LibraryManagementApplication.Commands;
 using MediatR;
-using System.Text.Json;
 using Persistence.UnitOfWork;
 
-
-public class AddAuthorRequest : IRequest<AuthorDTO>
+namespace LibraryManagementApplication.RequestHandler
 {
-    public AuthorModel Model { get; set; }
 
-    public class AddAuthorRequestHandler : IRequestHandler<AddAuthorRequest, AuthorDTO>
+    public class AddAuthorRequest : IRequest<AuthorDTO>
     {
-        private readonly IMediator _mediator;
-        private readonly IUnitOfWork _unitOfWork;
-        private readonly IRabbitMQSender<AuthorDTO> _rabbitMQSender;
+        public AuthorModel Model { get; set; }
 
-        public AddAuthorRequestHandler(IMediator mediator, IUnitOfWork unitOfWork, IRabbitMQSender<AuthorDTO> rabbitMQSender)
+        public class AddAuthorRequestHandler : IRequestHandler<AddAuthorRequest, AuthorDTO>
         {
-            _mediator = mediator;
-            _unitOfWork = unitOfWork;
-            _rabbitMQSender = rabbitMQSender;
-        }
+            private readonly Dispatcher _dispatcher;
+            private readonly IUnitOfWork _unitOfWork;
+            private readonly IRabbitMQSender<AuthorDTO> _rabbitMQSender;
 
-        public async Task<AuthorDTO> Handle(AddAuthorRequest request, CancellationToken cancellationToken)
-        {
-            await _unitOfWork.BeginTransactionAsync(); // Start transaction
-
-            try
+            public AddAuthorRequestHandler(
+                Dispatcher dispatcher,
+                IUnitOfWork unitOfWork,
+                IRabbitMQSender<AuthorDTO> rabbitMQSender)
             {
-                var dto = await _mediator.Send(new AddAuthorCommand { Model = request.Model }); // Send the command
-
-                // Commit the transaction
-                await _unitOfWork.SaveAndCommitAsync();
-   
-                // Send RabbitMQ message after adding the author
-                _rabbitMQSender.SendMessage(
-                    message: dto,
-                    exchangeName: "amq.direct", // Default direct exchange
-                    routingKey: "AuthorAdded",
-                    queueName: "authorQueue"
-                );
-
-                Console.WriteLine("Message sent successfully!");
-
-                return dto; // Return the DTO
+                _dispatcher = dispatcher;
+                _unitOfWork = unitOfWork;
+                _rabbitMQSender = rabbitMQSender;
             }
-            catch (Exception ex)
+
+            public async Task<AuthorDTO> Handle(AddAuthorRequest request, CancellationToken cancellationToken)
             {
-                // Rollback in case of error
-                _unitOfWork.RollbackTransaction();
-                Console.WriteLine($"Error: {ex.Message}");
-                throw;
+                await _unitOfWork.BeginTransactionAsync();
+
+                try
+                {
+                    // Dispatch AddAuthorCommand
+                    var addAuthorCommand = new AddAuthorCommand { Model = request.Model };
+                    await _dispatcher.DispatchAsync(addAuthorCommand, cancellationToken);
+
+                    // Commit transaction
+                    await _unitOfWork.SaveAndCommitAsync();
+
+                    // Map to DTO
+                    var authorEntity = request.Model.ToEntity();
+                    var dto = authorEntity.ToDTO();
+
+                    // Send RabbitMQ message
+                    _rabbitMQSender.SendMessage(
+                        message: dto,
+                        exchangeName: "amq.direct",
+                        routingKey: "AuthorAdded",
+                        queueName: "authorQueue"
+                    );
+
+                    return dto;
+                }
+                catch (Exception ex)
+                {
+                    _unitOfWork.RollbackTransaction();
+                    throw new ApplicationException($"Error adding author: {ex.Message}", ex);
+                }
             }
         }
     }

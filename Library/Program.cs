@@ -1,4 +1,6 @@
 using Kernal;
+using Shared.Helpers;
+using Shared.Contracts;
 using LibraryManagementInfrastructure;
 using Persistence.Interface;
 using Persistence.UnitOfWork;
@@ -20,6 +22,10 @@ using StackExchange.Redis;
 using Serilog;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using LibraryManagementDomain.DTO;
+using Scrutor;
+using LibraryManagementApplication.Commands;
+using LibraryManagementApplication.Queries;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -81,6 +87,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
    options.InstanceName = "RedisCacheInstance"; // Optional: specify an instance name
 });
 
+
+
 //Register Serilog as the logging provider
 builder.Host.UseSerilog();
 
@@ -97,6 +105,18 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 // Register RabbitMQ Sender and Receiver
 builder.Services.AddSingleton(typeof(IRabbitMQSender<>), typeof(RabbitMQSender<>));
 builder.Services.AddSingleton(typeof(IRabbitMQReceiver<>), typeof(RabbitMQReceiver<>));
+
+
+// Register Commands and Queries using Scrutor
+builder.Services.Scan(scan =>
+    scan.FromAssemblies(AppDomain.CurrentDomain.GetAssemblies())
+        .AddClasses(classes => classes.AssignableTo(typeof(ICommandHandler<>)))
+        .AsImplementedInterfaces()
+        .WithScopedLifetime()
+        .AddClasses(classes => classes.AssignableTo(typeof(IQueryHandler<,>)))
+        .AsImplementedInterfaces()
+        .WithScopedLifetime()
+);
 
 // RabbitMQ dependencies
 builder.Services.AddSingleton(sp =>
@@ -182,6 +202,8 @@ builder.Services.AddControllersWithViews()
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<AuthorValidator>());
 
 builder.Services.AddAuthorization();
+
+builder.Services.AddScoped<Dispatcher>();
 
 var app = builder.Build();
 

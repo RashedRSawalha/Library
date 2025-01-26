@@ -1,4 +1,6 @@
-﻿namespace Persistence.Interface
+﻿using System.Linq.Expressions;
+
+namespace Persistence.Interface
 {
     public interface IRepository<T> where T : class
     {
@@ -7,7 +9,8 @@
         Task AddAsync(T entity);
         void Update(T entity);
         void Delete(T entity);
-        //Task AddAsync(Book book);
+        Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
+        //Task AddAsync(Book book); 
 
         IQueryable<T> GetAll(); // For lazy-loading
         Task<List<T>> ToListAsync(IQueryable<T> query, CancellationToken cancellationToken = default); // Convert IQueryable to List

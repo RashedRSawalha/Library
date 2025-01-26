@@ -2,6 +2,8 @@
 using LibraryManagementApplication.Authentication;
 using LibraryManagementApplication.Authorization;
 using LibraryManagementApplication.Queries;
+using LibraryManagementApplication.RequestHandler;
+using LibraryManagementApplication.Requests;
 using LibraryManagementDomain.DTO;
 using LibraryManagementDomain.Entities;
 using LibraryManagementDomain.Models;
@@ -65,9 +67,15 @@ namespace LibraryManagementAPI.Controllers
           )]
         public async Task<ActionResult<IEnumerable<AuthorDTO>>> GetAuthors()
         {
-            _logger.LogInformation("Logger:Fetching Authors");
-            var authors = await _mediator.Send(new GetAuthorsQuery());
-            return Ok(authors);
+            try
+            {
+                var authors = await _mediator.Send(new GetAuthorsRequest());
+                return Ok(authors);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { Message = ex.Message });
+            }
         }
 
         [HttpPost("filtered")]
@@ -93,12 +101,19 @@ namespace LibraryManagementAPI.Controllers
         public async Task<ActionResult<AuthorDTO>> GetAuthorByName(string name)
         {
 
-            string cacheKey = $"Author:{name}";
-            string apiUrl = $"https://localhost:44321/api/authors/GetFromDB?Name={name}";
+            //string cacheKey = $"Author:{name}";
+            //string apiUrl = $"https://localhost:44328/api/authors/GetFromDB?Name={name}";
 
-            // Check if the author exists in the Redis cache
-            var cachedAuthor = await _redisCache.GetAsync<AuthorDTO>(cacheKey, apiUrl);
-            return Ok(cachedAuthor);
+            //// Check if the author exists in the Redis cache
+            //var cachedAuthor = await _redisCache.GetAsync<AuthorDTO>(cacheKey, apiUrl);
+            //return Ok(cachedAuthor);
+
+            var result = await _mediator.Send(new GetAuthorByNameRequest { AuthorName = name });
+
+            if (result == null)
+                return NotFound(new { Message = "Author not found" });
+
+            return Ok(result);
         }
 
         //[Authorize]
@@ -110,7 +125,6 @@ namespace LibraryManagementAPI.Controllers
         )]
         public async Task<ActionResult> AddAuthor([FromBody] AuthorModel model)
         {
-
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState); // Return validation errors

@@ -1,49 +1,36 @@
 ﻿using LibraryManagementDomain.Entities;
-using LibraryManagementDomain.Mapping;
 using LibraryManagementDomain.DTO;
+using LibraryManagementDomain.Mapping;
 using Persistence.Interface;
-using MediatR;
+using Shared.Contracts;
 using Microsoft.EntityFrameworkCore;
-using Shared.Redis;
 
-namespace LibraryManagementApplication.Queries 
-{ 
-
-public class GetAuthorByNameQuery : IRequest<AuthorDTO>
+namespace LibraryManagementApplication.Queries
 {
-    public string AuthorName { get; set; }
-
-    public class Handler : IRequestHandler<GetAuthorByNameQuery, AuthorDTO>
+    public class GetAuthorByNameQuery : IQuery<AuthorDTO>
     {
-        private readonly IRepository<Author> _authorRepository;
-        private readonly IRedisCache _redisCache;
+        public string AuthorName { get; set; }
 
-        public Handler(IRepository<Author> authorRepository, IRedisCache redisCache)
+        public class Handler : IQueryHandler<GetAuthorByNameQuery, AuthorDTO>
         {
-            _authorRepository = authorRepository;
-            _redisCache = redisCache;
-        }
+            private readonly IRepository<Author> _authorRepository;
 
-        public async Task<AuthorDTO> Handle(GetAuthorByNameQuery request, CancellationToken cancellationToken)
-        {
-            
-            var authorQuery = _authorRepository.GetAll()
-                .Where(a => a.Name == request.AuthorName);
-            var author = (await authorQuery.ToListAsync()).FirstOrDefault();
-
-            if (author == null)
+            public Handler(IRepository<Author> authorRepository)
             {
-                return null; // Author not found
+                _authorRepository = authorRepository;
             }
 
-            var dto = author.ToDTO();
+            public async Task<AuthorDTO> Handle(GetAuthorByNameQuery query, CancellationToken cancellationToken)
+            {
+                var author = await _authorRepository.GetAll()
+                    .Where(a => a.Name == query.AuthorName)
+                    .FirstOrDefaultAsync(cancellationToken);
 
-            // Store the fetched author in the Redis cache for future use
-            //await _redisCache.SetAsync(request.AuthorName, TimeSpan.FromMinutes(100));
+                if (author == null)
+                    return null;
 
-            return dto;
-
+                return author.ToDTO();
+            }
         }
     }
-}
 }

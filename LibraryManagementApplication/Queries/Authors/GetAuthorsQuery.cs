@@ -1,14 +1,18 @@
-﻿using LibraryManagementDomain.Entities;
-using LibraryManagementDomain.DTO;
+﻿using LibraryManagementDomain.DTO;
+using LibraryManagementDomain.Entities;
 using LibraryManagementDomain.Mapping;
 using Persistence.Interface;
-using MediatR;
+using Shared.Contracts;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace LibraryManagementApplication.Queries
 {
-    public class GetAuthorsQuery : IRequest<IEnumerable<AuthorDTO>>
+    public class GetAuthorsQuery : IQuery<IEnumerable<AuthorDTO>>
     {
-        public class Handler : IRequestHandler<GetAuthorsQuery, IEnumerable<AuthorDTO>>
+        public class Handler : IQueryHandler<GetAuthorsQuery, IEnumerable<AuthorDTO>>
         {
             private readonly IRepository<Author> _authorRepository;
 
@@ -17,13 +21,13 @@ namespace LibraryManagementApplication.Queries
                 _authorRepository = authorRepository;
             }
 
-            public async Task<IEnumerable<AuthorDTO>> Handle(GetAuthorsQuery request, CancellationToken cancellationToken)
+            public async Task<IEnumerable<AuthorDTO>> Handle(GetAuthorsQuery query, CancellationToken cancellationToken)
             {
+                // Fetch authors from repository
                 var authors = await _authorRepository.GetAllAsync();
 
                 // Map authors to DTOs
-                var dto = authors.Select(author => author.ToDTO());
-                return dto;
+                return authors.Select(author => author.ToDTO());
             }
         }
     }

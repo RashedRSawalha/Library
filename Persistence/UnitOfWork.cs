@@ -14,7 +14,7 @@ namespace Persistence.UnitOfWork
         private IDbContextTransaction _transaction;
 
         public IRepository<Book> Books { get; private set; }       // Generic repository for Books
-        public IRepository<Author> Authors { get; private set; }  // Generic repository for Authors
+        public IRepository<Author> Authors { get; private set; }   // Generic repository for Authors
         public IRepository<Student> Students { get; private set; } // Repository for Students
         public IRepository<Course> Courses { get; private set; }   // Repository for Courses
 
@@ -27,10 +27,7 @@ namespace Persistence.UnitOfWork
         public UnitOfWork(LibraryDBContext context)
         {
             _context = context;
-            //Books = new Repository<Book>(context);     // Initialize generic repository for Books
-            //Authors = new Repository<Author>(context);   // Initialize generic repository for Authors
-            //Students = new Repository<Student>(context);
-            //Courses = new Repository<Course>(context);
+
 
         }
 

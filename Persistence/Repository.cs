@@ -3,6 +3,7 @@ using LibraryManagementInfrastructure;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Interface;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 
 namespace Persistence.Repository
@@ -57,6 +58,17 @@ namespace Persistence.Repository
         {
             return await query.FirstOrDefaultAsync(cancellationToken); // Fetch first or default
         }
+
+        public async Task<bool> AnyAsync(Expression<Func<T, bool>> predicate, CancellationToken cancellationToken = default)
+        {
+            return await _dbSet.AnyAsync(predicate, cancellationToken);
+        }
+
+        public async Task<bool> AnyAsync(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().AnyAsync(predicate);
+        }
+
 
         //public Task AddAsync(Book book)
         //{
